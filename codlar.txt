@@ -1,0 +1,144 @@
+2.Dersteki Kýsým
+
+public class IntegerToArray {
+
+	public static void main(String[] args) {
+	
+		int input=325;
+		
+		
+		int[] output=IntegerToArray(input);
+		
+		for(int i=0;i<output.length;i++){
+			System.out.print(output[i]);
+		}
+		
+		
+		
+		
+	}
+
+	private static int[] IntegerToArray(int input) {
+		int [] dizi=new int [3];
+		int birler,onlar,yuzler;
+		
+		birler=input%10;
+		input=input/10;
+		onlar=input%10;
+		yuzler=input/10;
+		dizi[0]=birler;
+		dizi[1]=onlar;
+		dizi[2]=yuzler;
+		
+		
+		2.yol:
+		
+//		int i=0;
+//		while(input!=0)
+//		{
+//			int rakam=input%10;
+//			dizi[i]=rakam;
+//			i++;
+//			input/=10;
+//			
+//			
+//			
+//		}
+		
+		return dizi;
+		
+
+
+
+Ýlk Dersteki Kýsým:
+
+
+import java.util.Scanner;
+public class Reverse {
+
+	
+	public static <bool> void main(String[] args) {
+		
+//	Scanner scn=new Scanner(System.in);
+//	
+//	int sayi;
+//	
+//	do{
+//		System.out.println("bir sayi giriniz");
+//	    sayi=scn.nextInt();
+//		
+//	}while(sayi<10 || sayi>99);
+//			
+//	int reverse=0;
+//	
+//	while(sayi!=0)
+//	{
+//		int kalan=sayi%10;
+//		reverse=reverse*10+kalan;
+//		sayi/=10;
+//			
+//		
+//	}
+//	System.out.println(reverse);
+	
+		int[] y={8,9,5,9};
+		int[] z={7,6,3,5};
+		
+	 
+		if(Buyukmu(y,z)){
+			System.out.println("y dizisi z dizisinden büyüktür");
+		}else{
+			System.out.println("z dizisi y dizisinden büyüktür");
+		}
+		
+		
+	
+	
+	
+	
+	{
+		
+		
+		
+	}
+	
+	
+		
+		
+
+	}
+
+	private static boolean Buyukmu(int[] y,int [] z)
+	{
+		boolean buyukmu=true;
+		
+		int indis=0;
+		while(indis<y.length){
+			
+			if(y[indis]<z[indis]){
+				buyukmu=false;
+							
+			}
+				indis++;
+		
+			
+		}
+		
+		return false;
+		
+		
+		
+		
+	
+		
+		
+	}
+
+}
+
+		
+		
+	
+	}
+
+}
